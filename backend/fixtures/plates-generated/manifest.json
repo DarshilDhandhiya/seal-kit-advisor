@@ -1,0 +1,75 @@
+{
+  "notice": "Fictional OCR test plates. Not photographs or copies of JCB identification plates. Never infer real fitment.",
+  "images": [
+    {
+      "file": "BHL-0001_clear.png",
+      "expectedSerial": "DEMO-BHL-0001",
+      "expected": "confirm_serial"
+    },
+    {
+      "file": "BHL-0002_clear.png",
+      "expectedSerial": "DEMO-BHL-0002",
+      "expected": "confirm_serial"
+    },
+    {
+      "file": "BHL-0003_clear.png",
+      "expectedSerial": "DEMO-BHL-0003",
+      "expected": "confirm_serial"
+    },
+    {
+      "file": "BHL-0004_clear.png",
+      "expectedSerial": "DEMO-BHL-0004",
+      "expected": "confirm_serial"
+    },
+    {
+      "file": "EXC-0005_clear.png",
+      "expectedSerial": "DEMO-EXC-0005",
+      "expected": "confirm_serial"
+    },
+    {
+      "file": "EXC-0006_clear.png",
+      "expectedSerial": "DEMO-EXC-0006",
+      "expected": "confirm_serial"
+    },
+    {
+      "file": "EXC-0007_clear.png",
+      "expectedSerial": "DEMO-EXC-0007",
+      "expected": "confirm_serial"
+    },
+    {
+      "file": "EXC-0008_clear.png",
+      "expectedSerial": "DEMO-EXC-0008",
+      "expected": "confirm_serial"
+    },
+    {
+      "file": "variant_blurred.png",
+      "expectedSerial": "DEMO-BHL-0001",
+      "expected": "confirm_if_readable_else_request_clearer_photo"
+    },
+    {
+      "file": "variant_very_blurred.png",
+      "expectedSerial": null,
+      "expected": "request_clearer_photo_or_typed_serial"
+    },
+    {
+      "file": "variant_rotated.png",
+      "expectedSerial": "DEMO-BHL-0001",
+      "expected": "confirm_serial"
+    },
+    {
+      "file": "variant_serial_cropped_out.png",
+      "expectedSerial": null,
+      "expected": "request_clearer_photo_or_typed_serial"
+    },
+    {
+      "file": "variant_low_res.jpg",
+      "expectedSerial": "DEMO-BHL-0001",
+      "expected": "confirm_if_readable_else_request_clearer_photo"
+    },
+    {
+      "file": "variant_noisy.png",
+      "expectedSerial": "DEMO-BHL-0001",
+      "expected": "confirm_if_readable_else_request_clearer_photo"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+openapi: 3.0.3
+info:
+  title: Seal-Kit Advisor API
+  version: 1.0.0
+  description: "All data is fictional DEMO data. Admin routes need Authorization: Bearer <JWT> from /api/admin/auth/login; write operations need role admin (403 for staff)."
+servers:
+  - url: http://localhost:4000
+components:
+  securitySchemes:
+    bearer: { type: http, scheme: bearer, bearerFormat: JWT }
+paths:
+  /api/webhooks/whatsapp:
+    get:
+      summary: "Meta webhook verification (hub.mode, hub.verify_token, hub.challenge)"
+      responses:
+        '200': { description: OK }
+    post:
+      summary: "Receive WhatsApp events (X-Hub-Signature-256 required)"
+      responses:
+        '200': { description: OK }
+  /api/demo/messages:
+    post:
+      summary: "Simulator: send text or image (multipart: waId, text, image)"
+      responses:
+        '200': { description: OK }
+  /api/demo/conversations/{waId}:
+    get:
+      summary: "Simulator: conversation snapshot"
+      parameters:
+        - { name: waId, in: path, required: true, schema: { type: string } }
+      responses:
+        '200': { description: OK }
+  /api/demo/reset:
+    post:
+      summary: "Simulator: reset a session"
+      responses:
+        '200': { description: OK }
+  /api/demo/plates:
+    get:
+      summary: "Sample plate manifest"
+      responses:
+        '200': { description: OK }
+  /api/admin/auth/login:
+    post:
+      summary: "Login -> JWT"
+      responses:
+        '200': { description: OK }
+  /api/admin/me:
+    get:
+      summary: "Current user"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/stats:
+    get:
+      summary: "Dashboard counts"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/assemblies:
+    get:
+      summary: "List assemblies"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/machines:
+    get:
+      summary: "List/search machines (?q=serial)"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+    post:
+      summary: "Create machine (admin)"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/machines/{serial}:
+    patch:
+      summary: "Update machine (admin)"
+      parameters:
+        - { name: serial, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/kits:
+    get:
+      summary: "List kits"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+    post:
+      summary: "Create kit (admin)"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/kits/{sku}:
+    get:
+      summary: "Get kit"
+      parameters:
+        - { name: sku, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+    patch:
+      summary: "Edit kit / stock (admin, audited)"
+      parameters:
+        - { name: sku, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+    delete:
+      summary: "Delete kit (admin, audited)"
+      parameters:
+        - { name: sku, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/fitments:
+    get:
+      summary: "List fitments"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+    post:
+      summary: "Create fitment (admin); verified requires evidenceSource"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/fitments/{id}:
+    patch:
+      summary: "Update fitment (admin, audited)"
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+    delete:
+      summary: "Delete fitment (admin, audited)"
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/tickets:
+    get:
+      summary: "List review tickets"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/tickets/{id}:
+    get:
+      summary: "Get ticket"
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+    patch:
+      summary: "Assign/resolve ticket"
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/leads:
+    get:
+      summary: "List leads"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/leads/export.csv:
+    get:
+      summary: "Export leads CSV"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/leads/{id}:
+    patch:
+      summary: "Update lead status"
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+    delete:
+      summary: "Delete lead (admin)"
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/conversations:
+    get:
+      summary: "Search conversations (serial/phone/name/state)"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/conversations/{id}:
+    get:
+      summary: "Conversation + messages + OCR"
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/conversations/{id}/reply:
+    post:
+      summary: "Staff reply to customer"
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/conversations/{id}:
+    delete:
+      summary: "Delete customer data (admin)"
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/messages/{id}/media:
+    get:
+      summary: "Decrypted photo (authenticated)"
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/retention/run:
+    post:
+      summary: "Run media retention purge (admin)"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }
+  /api/admin/audit:
+    get:
+      summary: "Audit trail"
+      security: [{ bearer: [] }]
+      responses:
+        '200': { description: OK }
+        '401': { description: Missing/invalid token }

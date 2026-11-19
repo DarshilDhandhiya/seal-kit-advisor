@@ -1,0 +1,482 @@
+{
+  "_notice": "ALL MACHINE SERIALS, KIT SKUS, PRICES AND FITMENTS ARE FICTIONAL DEMO DATA. NOT VERIFIED JCB COMPATIBILITY.",
+  "_schemaVersion": "1.0",
+  "machines": [
+    {
+      "serial": "DEMO-BHL-0001",
+      "model": "3DX",
+      "family": "BHL",
+      "variant": "A",
+      "year": 2020,
+      "status": "active",
+      "notes": "FICTIONAL DEMO MACHINE - not a real JCB PIN"
+    },
+    {
+      "serial": "DEMO-BHL-0002",
+      "model": "3DX",
+      "family": "BHL",
+      "variant": "B",
+      "year": 2022,
+      "status": "active",
+      "notes": "FICTIONAL DEMO MACHINE - not a real JCB PIN"
+    },
+    {
+      "serial": "DEMO-BHL-0003",
+      "model": "4DX",
+      "family": "BHL",
+      "variant": "A",
+      "year": 2021,
+      "status": "active",
+      "notes": "FICTIONAL DEMO MACHINE - not a real JCB PIN"
+    },
+    {
+      "serial": "DEMO-BHL-0004",
+      "model": "4DX",
+      "family": "BHL",
+      "variant": "B",
+      "year": 2023,
+      "status": "active",
+      "notes": "FICTIONAL DEMO MACHINE - not a real JCB PIN"
+    },
+    {
+      "serial": "DEMO-EXC-0005",
+      "model": "JS130",
+      "family": "EXC",
+      "variant": "A",
+      "year": 2020,
+      "status": "active",
+      "notes": "FICTIONAL DEMO MACHINE - not a real JCB PIN"
+    },
+    {
+      "serial": "DEMO-EXC-0006",
+      "model": "JS130",
+      "family": "EXC",
+      "variant": "B",
+      "year": 2022,
+      "status": "active",
+      "notes": "FICTIONAL DEMO MACHINE - not a real JCB PIN"
+    },
+    {
+      "serial": "DEMO-EXC-0007",
+      "model": "JS220",
+      "family": "EXC",
+      "variant": "A",
+      "year": 2021,
+      "status": "active",
+      "notes": "FICTIONAL DEMO MACHINE - not a real JCB PIN"
+    },
+    {
+      "serial": "DEMO-EXC-0008",
+      "model": "JS220",
+      "family": "EXC",
+      "variant": "B",
+      "year": 2023,
+      "status": "active",
+      "notes": "FICTIONAL DEMO MACHINE - not a real JCB PIN"
+    }
+  ],
+  "assemblies": [
+    {
+      "code": "BOOM",
+      "label": "Boom cylinder",
+      "position": "hydraulic",
+      "imageUrl": "/demo/assemblies/boom.png"
+    },
+    {
+      "code": "DIPPER",
+      "label": "Dipper cylinder",
+      "position": "hydraulic",
+      "imageUrl": "/demo/assemblies/dipper.png"
+    },
+    {
+      "code": "BUCKET",
+      "label": "Bucket cylinder",
+      "position": "hydraulic",
+      "imageUrl": "/demo/assemblies/bucket.png"
+    },
+    {
+      "code": "STAB",
+      "label": "Stabilizer cylinder",
+      "position": "hydraulic",
+      "imageUrl": "/demo/assemblies/stab.png"
+    }
+  ],
+  "kits": [
+    {
+      "sku": "DK-BHL-A-BOOM",
+      "name": "BHL A boom seal kit",
+      "assemblyCode": "BOOM",
+      "demoPriceINR": 1850,
+      "stock": 12,
+      "imageUrl": "/demo/kits/DK-BHL-A-BOOM.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-BHL-B-BOOM",
+      "name": "BHL B boom seal kit",
+      "assemblyCode": "BOOM",
+      "demoPriceINR": 1950,
+      "stock": 8,
+      "imageUrl": "/demo/kits/DK-BHL-B-BOOM.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-BHL-A-DIP",
+      "name": "BHL A dipper seal kit",
+      "assemblyCode": "DIPPER",
+      "demoPriceINR": 1700,
+      "stock": 10,
+      "imageUrl": "/demo/kits/DK-BHL-A-DIP.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-BHL-B-DIP",
+      "name": "BHL B dipper seal kit",
+      "assemblyCode": "DIPPER",
+      "demoPriceINR": 1800,
+      "stock": 0,
+      "imageUrl": "/demo/kits/DK-BHL-B-DIP.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-BHL-A-BKT",
+      "name": "BHL A bucket seal kit",
+      "assemblyCode": "BUCKET",
+      "demoPriceINR": 1450,
+      "stock": 15,
+      "imageUrl": "/demo/kits/DK-BHL-A-BKT.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-BHL-B-BKT",
+      "name": "BHL B bucket seal kit",
+      "assemblyCode": "BUCKET",
+      "demoPriceINR": 1550,
+      "stock": 7,
+      "imageUrl": "/demo/kits/DK-BHL-B-BKT.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-BHL-A-STB",
+      "name": "BHL A stabilizer seal kit",
+      "assemblyCode": "STAB",
+      "demoPriceINR": 1250,
+      "stock": 9,
+      "imageUrl": "/demo/kits/DK-BHL-A-STB.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-BHL-B-STB",
+      "name": "BHL B stabilizer seal kit",
+      "assemblyCode": "STAB",
+      "demoPriceINR": 1350,
+      "stock": 6,
+      "imageUrl": "/demo/kits/DK-BHL-B-STB.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-EXC-A-BOOM",
+      "name": "Excavator A boom seal kit",
+      "assemblyCode": "BOOM",
+      "demoPriceINR": 2850,
+      "stock": 5,
+      "imageUrl": "/demo/kits/DK-EXC-A-BOOM.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-EXC-B-BOOM",
+      "name": "Excavator B boom seal kit",
+      "assemblyCode": "BOOM",
+      "demoPriceINR": 3100,
+      "stock": 4,
+      "imageUrl": "/demo/kits/DK-EXC-B-BOOM.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-EXC-A-BKT",
+      "name": "Excavator A bucket seal kit",
+      "assemblyCode": "BUCKET",
+      "demoPriceINR": 2250,
+      "stock": 6,
+      "imageUrl": "/demo/kits/DK-EXC-A-BKT.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    },
+    {
+      "sku": "DK-EXC-B-BKT",
+      "name": "Excavator B bucket seal kit",
+      "assemblyCode": "BUCKET",
+      "demoPriceINR": 2400,
+      "stock": 3,
+      "imageUrl": "/demo/kits/DK-EXC-B-BKT.png",
+      "description": "Fictional seal kit for developer testing only; verify real parts with supplier.",
+      "active": true
+    }
+  ],
+  "fitments": [
+    {
+      "machineSerial": "DEMO-BHL-0001",
+      "assemblyCode": "BOOM",
+      "kitSku": "DK-BHL-A-BOOM",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0001",
+      "assemblyCode": "DIPPER",
+      "kitSku": "DK-BHL-A-DIP",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0001",
+      "assemblyCode": "BUCKET",
+      "kitSku": "DK-BHL-A-BKT",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0001",
+      "assemblyCode": "STAB",
+      "kitSku": "DK-BHL-A-STB",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0002",
+      "assemblyCode": "BOOM",
+      "kitSku": "DK-BHL-B-BOOM",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0002",
+      "assemblyCode": "DIPPER",
+      "kitSku": "DK-BHL-B-DIP",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0002",
+      "assemblyCode": "BUCKET",
+      "kitSku": "DK-BHL-B-BKT",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0002",
+      "assemblyCode": "STAB",
+      "kitSku": "DK-BHL-B-STB",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0003",
+      "assemblyCode": "BOOM",
+      "kitSku": "DK-BHL-A-BOOM",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0003",
+      "assemblyCode": "DIPPER",
+      "kitSku": "DK-BHL-A-DIP",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0003",
+      "assemblyCode": "BUCKET",
+      "kitSku": "DK-BHL-A-BKT",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0003",
+      "assemblyCode": "STAB",
+      "kitSku": "DK-BHL-A-STB",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0004",
+      "assemblyCode": "BOOM",
+      "kitSku": "DK-BHL-B-BOOM",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0004",
+      "assemblyCode": "DIPPER",
+      "kitSku": "DK-BHL-B-DIP",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0004",
+      "assemblyCode": "BUCKET",
+      "kitSku": "DK-BHL-B-BKT",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-BHL-0004",
+      "assemblyCode": "STAB",
+      "kitSku": "DK-BHL-B-STB",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-EXC-0005",
+      "assemblyCode": "BOOM",
+      "kitSku": "DK-EXC-A-BOOM",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-EXC-0005",
+      "assemblyCode": "BUCKET",
+      "kitSku": "DK-EXC-A-BKT",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-EXC-0006",
+      "assemblyCode": "BOOM",
+      "kitSku": "DK-EXC-B-BOOM",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-EXC-0006",
+      "assemblyCode": "BUCKET",
+      "kitSku": "DK-EXC-B-BKT",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-EXC-0007",
+      "assemblyCode": "BOOM",
+      "kitSku": "DK-EXC-A-BOOM",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-EXC-0007",
+      "assemblyCode": "BUCKET",
+      "kitSku": "DK-EXC-A-BKT",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-EXC-0008",
+      "assemblyCode": "BOOM",
+      "kitSku": "DK-EXC-B-BOOM",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    },
+    {
+      "machineSerial": "DEMO-EXC-0008",
+      "assemblyCode": "BUCKET",
+      "kitSku": "DK-EXC-B-BKT",
+      "evidenceSource": "FICTIONAL_DEMO_SEED",
+      "verified": true,
+      "active": true
+    }
+  ],
+  "testCases": [
+    {
+      "inputSerial": "DEMO-BHL-0001",
+      "assemblyCode": "BOOM",
+      "expectedSku": "DK-BHL-A-BOOM",
+      "expectedOutcome": "recommend"
+    },
+    {
+      "inputSerial": "DEMO-BHL-0002",
+      "assemblyCode": "BOOM",
+      "expectedSku": "DK-BHL-B-BOOM",
+      "expectedOutcome": "recommend"
+    },
+    {
+      "inputSerial": "DEMO-BHL-0001",
+      "assemblyCode": "DIPPER",
+      "expectedSku": "DK-BHL-A-DIP",
+      "expectedOutcome": "recommend"
+    },
+    {
+      "inputSerial": "DEMO-BHL-0002",
+      "assemblyCode": "DIPPER",
+      "expectedSku": "DK-BHL-B-DIP",
+      "expectedOutcome": "out_of_stock"
+    },
+    {
+      "inputSerial": "DEMO-BHL-0003",
+      "assemblyCode": "STAB",
+      "expectedSku": "DK-BHL-A-STB",
+      "expectedOutcome": "recommend"
+    },
+    {
+      "inputSerial": "DEMO-EXC-0008",
+      "assemblyCode": "BUCKET",
+      "expectedSku": "DK-EXC-B-BKT",
+      "expectedOutcome": "recommend"
+    },
+    {
+      "inputSerial": "DEMO-EXC-0008",
+      "assemblyCode": "STAB",
+      "expectedSku": null,
+      "expectedOutcome": "human_review_no_fitment"
+    },
+    {
+      "inputSerial": "DEMO-UNKNOWN-9999",
+      "assemblyCode": "BOOM",
+      "expectedSku": null,
+      "expectedOutcome": "human_review_unknown_serial"
+    },
+    {
+      "inputSerial": "DEMO-BHL-0001",
+      "assemblyCode": null,
+      "expectedSku": null,
+      "expectedOutcome": "ask_assembly"
+    },
+    {
+      "inputSerial": "unreadable_image",
+      "assemblyCode": null,
+      "expectedSku": null,
+      "expectedOutcome": "ask_for_clearer_image_or_typed_serial"
+    }
+  ]
+}
