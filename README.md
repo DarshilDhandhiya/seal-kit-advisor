@@ -8,6 +8,50 @@ MERN-style stack in TypeScript: **Node 22 + Express 5 + MongoDB (Atlas) + React/
 
 → **Start with [SETUP_GUIDE.md](SETUP_GUIDE.md).**
 
+## Screenshots
+
+> All screens use fictional DEMO data. Images live in [`docs/evidence/`](docs/evidence/). A full screen recording of the simulator flow is in [`docs/evidence/simulator-flow.webm`](docs/evidence/simulator-flow.webm).
+
+### Customer simulator (WhatsApp-style chat)
+| Welcome | OCR reads the plate and asks to confirm |
+|---|---|
+| ![Welcome](docs/evidence/01-simulator-welcome.png) | ![OCR confirmation](docs/evidence/02-simulator-ocr-confirm.png) |
+
+| Assembly list | Exact kit recommendation |
+|---|---|
+| ![Assembly list](docs/evidence/03-simulator-assembly-list.png) | ![Recommendation](docs/evidence/04-simulator-recommendation.png) |
+
+| Quote request completed | Out of stock (availability not promised) |
+|---|---|
+| ![Quote done](docs/evidence/05-simulator-quote-done.png) | ![Out of stock](docs/evidence/06-simulator-out-of-stock.png) |
+
+| Unknown serial → staff review ticket | Hindi reply + blurred plate |
+|---|---|
+| ![Unknown serial](docs/evidence/07-simulator-unknown-serial-ticket.png) | ![Hindi](docs/evidence/08-simulator-hindi-blurred.png) |
+
+### Mobile view
+<img src="docs/evidence/09-mobile-no-fitment.png" alt="Mobile: no verified fitment, ticket raised" width="320">
+
+### Operator console
+| Login | Overview |
+|---|---|
+| ![Login](docs/evidence/10-admin-login.png) | ![Overview](docs/evidence/11-admin-overview.png) |
+
+| Kits (stock editing) | Fitments |
+|---|---|
+| ![Kits](docs/evidence/12-admin-kits.png) | ![Fitments](docs/evidence/13-admin-fitments.png) |
+
+| Add fitment (verify needs evidence) | Review tickets |
+|---|---|
+| ![Fitment form](docs/evidence/14-admin-fitment-form.png) | ![Tickets](docs/evidence/15-admin-tickets.png) |
+
+| Leads (CSV export) | Conversation with photo + OCR details |
+|---|---|
+| ![Leads](docs/evidence/16-admin-leads.png) | ![Conversation OCR](docs/evidence/17-admin-conversation-ocr.png) |
+
+### Audit trail
+![Audit trail](docs/evidence/18-admin-audit.png)
+
 ## Quick start
 ```bash
 cd backend && cp .env.example .env     # set MONGODB_URI (Atlas), JWT_SECRET
